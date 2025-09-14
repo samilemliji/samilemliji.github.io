@@ -16,8 +16,8 @@
     }
     body {
       font-family: 'Montserrat', sans-serif;
-      background-color: #fafafa;
-      color: #2c3e50;
+      background-color: #f5f2ea; /* beige claro */
+      color: #2f4f4f; /* verde oscuro */
       line-height: 1.6;
       min-height: 100vh;
       display: flex;
@@ -26,10 +26,10 @@
     .container {
       max-width: 960px;
       margin: 40px auto;
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 12px;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+      padding: 25px 30px;
+      background-color: #fffdfa; /* blanco muy suave */
+      border-radius: 14px;
+      box-shadow: 0 8px 20px rgba(79, 121, 104, 0.15);
     }
     header {
       text-align: center;
@@ -37,12 +37,14 @@
     }
     header h1 {
       font-size: 2.8rem;
-      color: #e65100;
-      margin-bottom: 10px;
+      color: #4a7a66; /* verde medio */
+      margin-bottom: 12px;
+      font-weight: 700;
     }
     header p {
-      font-size: 1.1rem;
-      color: #555;
+      font-size: 1.15rem;
+      color: #557b6e; /* verde grisáceo */
+      font-weight: 500;
     }
     .hero-image {
       text-align: center;
@@ -52,40 +54,39 @@
       max-width: 350px;
       width: 100%;
       height: auto;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(230,81,0,0.3);
+      border-radius: 14px;
+      box-shadow: 0 6px 20px rgba(74, 122, 102, 0.3);
     }
 
     /* Beneficios con iconos */
     .benefits {
       display: flex;
-      justify-content: space-between;
       flex-wrap: wrap;
-      gap: 20px;
+      gap: 24px;
       margin-bottom: 50px;
+      justify-content: space-between;
     }
     .benefit {
       flex: 1 1 45%;
-      background: #fff4e6;
-      border-left: 6px solid #e65100;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(230,81,0,0.15);
+      background: #e6f0e9; /* verde muy claro */
+      border-left: 6px solid #4a7a66;
+      padding: 20px 25px;
+      border-radius: 10px;
+      box-shadow: 0 3px 12px rgba(74, 122, 102, 0.15);
       display: flex;
-      align-items: center;
-      gap: 15px;
-      min-width: 250px;
+      align-items: flex-start;
+      gap: 18px;
+      min-width: 260px;
+      font-weight: 600;
+      font-size: 1.05rem;
+      color: #3a5749;
     }
     .benefit svg {
-      fill: #e65100;
-      width: 36px;
-      height: 36px;
+      fill: #4a7a66;
+      width: 38px;
+      height: 38px;
       flex-shrink: 0;
-    }
-    .benefit p {
-      font-weight: 600;
-      font-size: 1rem;
-      color: #3e3e3e;
+      margin-top: 4px;
     }
 
     /* Características técnicas */
@@ -93,54 +94,56 @@
       margin-bottom: 50px;
     }
     .features h2 {
-      color: #e65100;
+      color: #4a7a66;
       font-size: 2rem;
-      margin-bottom: 20px;
-      border-bottom: 3px solid #e65100;
-      padding-bottom: 5px;
-      max-width: 320px;
+      margin-bottom: 24px;
+      border-bottom: 3px solid #4a7a66;
+      padding-bottom: 8px;
+      max-width: 340px;
     }
     .features ul {
       list-style: none;
-      padding-left: 20px;
+      padding-left: 22px;
+      color: #446655;
+      font-weight: 500;
+      font-size: 1.1rem;
     }
     .features ul li {
-      padding: 10px 0;
-      border-bottom: 1px solid #ddd;
-      font-weight: 500;
-      color: #444;
+      padding: 12px 0;
+      border-bottom: 1px solid #d4e1d9;
     }
 
     /* Testimonios */
     .testimonials {
-      background-color: #fff4e6;
-      padding: 30px 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(230,81,0,0.15);
+      background-color: #e6f0e9;
+      padding: 30px 25px;
+      border-radius: 14px;
+      box-shadow: 0 6px 18px rgba(74, 122, 102, 0.15);
       margin-bottom: 50px;
+      color: #3a5749;
     }
     .testimonials h2 {
-      color: #e65100;
+      color: #4a7a66;
       font-size: 2rem;
-      margin-bottom: 30px;
+      margin-bottom: 36px;
       text-align: center;
-      max-width: 320px;
+      max-width: 340px;
       margin-left: auto;
       margin-right: auto;
-      border-bottom: 3px solid #e65100;
-      padding-bottom: 5px;
+      border-bottom: 3px solid #4a7a66;
+      padding-bottom: 8px;
     }
     .testimonial {
       font-style: italic;
-      margin-bottom: 25px;
+      margin-bottom: 28px;
       position: relative;
-      padding-left: 40px;
-      color: #5a5a5a;
+      padding-left: 42px;
+      font-weight: 500;
     }
     .testimonial::before {
       content: "“";
-      font-size: 3rem;
-      color: #e65100;
+      font-size: 3.2rem;
+      color: #4a7a66;
       position: absolute;
       left: 0;
       top: -10px;
@@ -149,10 +152,10 @@
     }
     .testimonial cite {
       display: block;
-      margin-top: 8px;
+      margin-top: 10px;
       font-style: normal;
-      font-weight: 600;
-      color: #333;
+      font-weight: 700;
+      color: #2f4f4f;
       text-align: right;
     }
 
@@ -162,45 +165,51 @@
       margin-bottom: 40px;
     }
     .cta a {
-      background-color: #e65100;
+      background-color: #4a7a66;
       color: #fff;
-      padding: 18px 40px;
+      padding: 18px 44px;
       font-size: 1.3rem;
       font-weight: 700;
-      border-radius: 10px;
+      border-radius: 12px;
       text-decoration: none;
-      box-shadow: 0 6px 15px rgba(230,81,0,0.6);
+      box-shadow: 0 6px 18px rgba(74, 122, 102, 0.8);
       transition: background-color 0.3s ease;
       display: inline-block;
+      letter-spacing: 0.03em;
     }
     .cta a:hover {
-      background-color: #bf4000;
+      background-color: #3a5e4d;
     }
 
     /* Footer */
     footer {
       text-align: center;
-      padding: 20px 10px;
+      padding: 22px 12px;
       font-size: 0.9rem;
-      color: #888;
-      border-top: 1px solid #ddd;
+      color: #7a8b7e;
+      border-top: 1px solid #d4e1d9;
       margin-top: auto;
-      background-color: #fff;
+      background-color: #fffdfa;
+      font-weight: 500;
     }
 
     /* Responsive */
-    @media(max-width: 600px) {
+    @media(max-width: 700px) {
       .benefits {
         flex-direction: column;
+        gap: 18px;
       }
       .benefit {
         flex: 1 1 100%;
+      }
+      .features h2, .testimonials h2 {
+        max-width: 100%;
       }
     }
   </style>
 </head>
 <body>
-  <div class="container">
+  <div class="container" role="main">
     <header>
       <h1>Amazon Fire TV Stick 4K</h1>
       <p>Streaming Ultra HD con Alexa: convierte tu TV en el centro de entretenimiento definitivo.</p>
@@ -213,52 +222,72 @@
     <section class="benefits" aria-label="Beneficios destacados">
       <div class="benefit">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2L15 8l6 1-4 4 1 6-5-3-5 3 1-6-4-4 6-1z"/></svg>
-        <p>Streaming en calidad 4K Ultra HD con HDR10+ y Dolby Vision</p>
+        <p>Streaming en calidad Ultra HD 4K compatible con HDR10+, Dolby Vision y Dolby Atmos para sonido envolvente.</p>
       </div>
       <div class="benefit">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 22c-5.52 0-10-4.48-10-10S6.48 2 12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10zM11 6h2v6h-2zm0 8h2v2h-2z"/></svg>
-        <p>Control remoto por voz con Alexa integrado</p>
+        <p>Control por voz con Alexa integrado para buscar contenido y controlar dispositivos sin usar controles.</p>
       </div>
       <div class="benefit">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 4h16v2H4zM4 8h10v2H4zM4 12h14v2H4zM4 16h7v2H4z"/></svg>
-        <p>Acceso a Netflix, Prime Video, Disney+, YouTube y más</p>
+        <p>Compatibilidad con Netflix, Prime Video, Disney+, YouTube, HBO Max y miles de apps para streaming y juegos.</p>
       </div>
       <div class="benefit">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3 10.28 3 12 5.28 12 5.28S13.72 3 16.5 3c3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
-        <p>Fácil instalación y uso intuitivo</p>
+        <p>Fácil instalación y uso inmediato: conecta a cualquier TV con HDMI y listo.</p>
+      </div>
+      <div class="benefit">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5c0-1.1-.9-2-2-2zM7 17H5v-2h2v2zm0-4H5v-2h2v2zm0-4H5V7h2v2zm6 8H9v-2h4v2zm0-4H9v-2h4v2zm4 4h-2v-2h2v2zm0-4h-2v-2h2v2z"/></svg>
+        <p>Actualizaciones automáticas y soporte constante para siempre estar al día.</p>
+      </div>
+      <div class="benefit">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-3.5 19.3l1.5-1.6a7 7 0 01-1.3-4.3 7 7 0 0111.3-6.1l1.6-1.4A10 10 0 0012 2z"/></svg>
+        <p>Diseño compacto y portátil, ideal para viajes o diferentes televisores.</p>
+      </div>
+      <div class="benefit">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 13h2v-2H3v2zm4 0h12v-2H7v2zm-2 6h14v-2H5v2zm2-12h10V5H7v2z"/></svg>
+        <p>Amplia biblioteca con miles de películas, series, música y juegos para toda la familia.</p>
+      </div>
+      <div class="benefit">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        <p>Mejora tu experiencia gaming casual con juegos populares y tiendas de apps.</p>
       </div>
     </section>
 
     <section class="features" aria-label="Características técnicas">
-      <h2>Características Técnicas</h2>
+      <h2>Características técnicas y beneficios prácticos</h2>
       <ul>
-        <li>Resolución 4K Ultra HD con soporte HDR10+ y Dolby Vision</li>
-        <li>Procesador Quad-Core para una experiencia fluida</li>
-        <li>Compatibilidad con Wi-Fi dual band 2.4/5 GHz</li>
-        <li>Control remoto con Alexa Voice Remote incluido</li>
-        <li>Acceso a miles de aplicaciones y servicios de streaming</li>
+        <li>Resolución 4K Ultra HD con HDR10+ y Dolby Vision.</li>
+        <li>Audio Dolby Atmos para sonido envolvente inmersivo.</li>
+        <li>Control por voz Alexa integrado, sin controles complicados.</li>
+        <li>Compatible con todas las plataformas de streaming principales.</li>
+        <li>Fácil instalación: conectar y listo, sin cables adicionales.</li>
+        <li>Actualizaciones automáticas que mejoran el dispositivo continuamente.</li>
+        <li>Diseño compacto y portátil para usar en cualquier lugar.</li>
+        <li>Acceso a miles de apps, juegos, películas y música.</li>
       </ul>
     </section>
 
-    <section class="testimonials" aria-label="Testimonios de usuarios">
+    <section class="testimonials" aria-label="Testimonios">
       <h2>Lo que dicen nuestros usuarios</h2>
       <blockquote class="testimonial">
-        “El Fire TV Stick 4K transformó mi forma de ver televisión. La calidad de imagen es increíble y el control por voz hace todo más fácil.” 
-        <cite>- Marta G.</cite>
+        Este Fire TV Stick 4K transformó mi televisor viejo en un centro multimedia de alta calidad. ¡Recomendado 100%!<cite>- Ana M.</cite>
       </blockquote>
       <blockquote class="testimonial">
-        “Instalación sencilla, interfaz rápida y acceso a todas mis apps favoritas. ¡100% recomendable!” 
-        <cite>- Carlos M.</cite>
+        El control por voz Alexa facilita mucho la navegación. Me encanta poder cambiar de app sin mover un dedo.<cite>- Carlos P.</cite>
+      </blockquote>
+      <blockquote class="testimonial">
+        Gran calidad de imagen y sonido. Perfecto para mis noches de películas y gaming casual.<cite>- Laura G.</cite>
       </blockquote>
     </section>
 
     <div class="cta">
-      <a href="https://amzn.to/47Cw1aW" target="_blank" rel="noopener noreferrer">Comprar ahora en Amazon</a>
+      <a href="https://www.amazon.com/dp/B079QHML21" target="_blank" rel="noopener noreferrer">Comprar Amazon Fire TV Stick 4K</a>
     </div>
   </div>
 
   <footer>
-    © 2025 Tu tienda online. Todos los derechos reservados.
+    &copy; 2025 Amazon Fire TV Stick 4K. Todos los derechos reservados.
   </footer>
 </body>
 </html>
