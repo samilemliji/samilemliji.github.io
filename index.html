@@ -3,135 +3,262 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Amazon Fire TV Stick 4K | Tu entretenimiento en casa</title>
-  <meta name="description" content="Convierte tu TV en un centro multimedia con el Amazon Fire TV Stick 4K. Streaming en 4K HDR, control por voz y acceso a tus plataformas favoritas.">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <title>Amazon Fire TV Stick 4K – Streaming Ultra HD con Alexa</title>
+  <meta name="description" content="Convierte tu TV en un centro multimedia con Amazon Fire TV Stick 4K. Streaming en 4K, control por voz Alexa, acceso a Netflix, Prime Video y más." />
+  <meta name="keywords" content="Amazon Fire TV Stick, Fire TV, Streaming 4K, Alexa, Prime Video, Netflix" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
   <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #e9f0f8;
-      margin: 0;
-      padding: 0;
-      color: #2c3e50;
+    /* Reset básico */
+    * {
+      margin: 0; 
+      padding: 0; 
+      box-sizing: border-box;
     }
-
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #fafafa;
+      color: #2c3e50;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
     .container {
       max-width: 960px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 40px 20px;
-      background-color: #ffffff;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fff;
       border-radius: 12px;
-      box-shadow: 0 10px 30px rgba(44, 62, 80, 0.1);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
     }
-
-    .hero h1 {
-      color: #1f618d;
-      font-size: 2.5em;
-      margin-bottom: 20px;
+    header {
+      text-align: center;
+      margin-bottom: 40px;
     }
-
-    .hero img {
-      max-width: 400px;
+    header h1 {
+      font-size: 2.8rem;
+      color: #e65100;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+    .hero-image {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .hero-image img {
+      max-width: 350px;
       width: 100%;
       height: auto;
-      border-radius: 10px;
-      margin-bottom: 30px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .description {
-      font-size: 1.15em;
-      line-height: 1.6;
-      color: #34495e;
-      margin-bottom: 30px;
-    }
-
-    .features {
-      background: #ffffff;
-      margin-top: 40px;
       border-radius: 12px;
-      padding: 30px;
-      box-shadow: 0 4px 20px rgba(44, 62, 80, 0.05);
+      box-shadow: 0 4px 15px rgba(230,81,0,0.3);
     }
 
+    /* Beneficios con iconos */
+    .benefits {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-bottom: 50px;
+    }
+    .benefit {
+      flex: 1 1 45%;
+      background: #fff4e6;
+      border-left: 6px solid #e65100;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(230,81,0,0.15);
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      min-width: 250px;
+    }
+    .benefit svg {
+      fill: #e65100;
+      width: 36px;
+      height: 36px;
+      flex-shrink: 0;
+    }
+    .benefit p {
+      font-weight: 600;
+      font-size: 1rem;
+      color: #3e3e3e;
+    }
+
+    /* Características técnicas */
+    .features {
+      margin-bottom: 50px;
+    }
     .features h2 {
-      font-size: 1.8em;
+      color: #e65100;
+      font-size: 2rem;
       margin-bottom: 20px;
-      color: #2980b9;
+      border-bottom: 3px solid #e65100;
+      padding-bottom: 5px;
+      max-width: 320px;
     }
-
     .features ul {
       list-style: none;
-      padding: 0;
+      padding-left: 20px;
+    }
+    .features ul li {
+      padding: 10px 0;
+      border-bottom: 1px solid #ddd;
+      font-weight: 500;
+      color: #444;
     }
 
-    .features li {
-      background-color: #d6eaf8;
-      padding: 15px 20px;
-      margin: 10px 0;
-      border-left: 6px solid #2980b9;
-      border-radius: 6px;
-      color: #1b4f72;
+    /* Testimonios */
+    .testimonials {
+      background-color: #fff4e6;
+      padding: 30px 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(230,81,0,0.15);
+      margin-bottom: 50px;
     }
-
-    .cta-button {
+    .testimonials h2 {
+      color: #e65100;
+      font-size: 2rem;
+      margin-bottom: 30px;
+      text-align: center;
+      max-width: 320px;
+      margin-left: auto;
+      margin-right: auto;
+      border-bottom: 3px solid #e65100;
+      padding-bottom: 5px;
+    }
+    .testimonial {
+      font-style: italic;
+      margin-bottom: 25px;
+      position: relative;
+      padding-left: 40px;
+      color: #5a5a5a;
+    }
+    .testimonial::before {
+      content: "“";
+      font-size: 3rem;
+      color: #e65100;
+      position: absolute;
+      left: 0;
+      top: -10px;
+      font-weight: 700;
+      line-height: 1;
+    }
+    .testimonial cite {
       display: block;
-      width: fit-content;
-      margin: 40px auto 0;
-      padding: 16px 32px;
-      font-size: 1.1em;
+      margin-top: 8px;
+      font-style: normal;
       font-weight: 600;
-      background-color: #2980b9;
-      color: white;
+      color: #333;
+      text-align: right;
+    }
+
+    /* CTA botón */
+    .cta {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .cta a {
+      background-color: #e65100;
+      color: #fff;
+      padding: 18px 40px;
+      font-size: 1.3rem;
+      font-weight: 700;
+      border-radius: 10px;
       text-decoration: none;
-      border-radius: 8px;
+      box-shadow: 0 6px 15px rgba(230,81,0,0.6);
       transition: background-color 0.3s ease;
+      display: inline-block;
+    }
+    .cta a:hover {
+      background-color: #bf4000;
     }
 
-    .cta-button:hover {
-      background-color: #1c5980;
-    }
-
+    /* Footer */
     footer {
       text-align: center;
-      font-size: 0.9em;
-      color: #7f8c8d;
-      margin: 50px 0 20px;
+      padding: 20px 10px;
+      font-size: 0.9rem;
+      color: #888;
+      border-top: 1px solid #ddd;
+      margin-top: auto;
+      background-color: #fff;
+    }
+
+    /* Responsive */
+    @media(max-width: 600px) {
+      .benefits {
+        flex-direction: column;
+      }
+      .benefit {
+        flex: 1 1 100%;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <section class="hero">
+    <header>
       <h1>Amazon Fire TV Stick 4K</h1>
+      <p>Streaming Ultra HD con Alexa: convierte tu TV en el centro de entretenimiento definitivo.</p>
+    </header>
+
+    <div class="hero-image">
       <img src="https://m.media-amazon.com/images/I/51ryZPaIbuL._UF1000,1000_QL80_.jpg" alt="Amazon Fire TV Stick 4K" />
-      <p class="description">
-        Convierte tu televisor en un centro multimedia con el <strong>Amazon Fire TV Stick 4K</strong>.  
-        Disfruta de streaming en calidad 4K Ultra HD, HDR10+, Dolby Vision y sonido Dolby Atmos.
-        Fácil instalación y control por voz con Alexa.
-      </p>
-      <a href="https://amzn.to/47Cw1aW" target="_blank" class="cta-button">Comprar ahora en Amazon</a>
+    </div>
+
+    <section class="benefits" aria-label="Beneficios destacados">
+      <div class="benefit">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2L15 8l6 1-4 4 1 6-5-3-5 3 1-6-4-4 6-1z"/></svg>
+        <p>Streaming en calidad 4K Ultra HD con HDR10+ y Dolby Vision</p>
+      </div>
+      <div class="benefit">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 22c-5.52 0-10-4.48-10-10S6.48 2 12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10zM11 6h2v6h-2zm0 8h2v2h-2z"/></svg>
+        <p>Control remoto por voz con Alexa integrado</p>
+      </div>
+      <div class="benefit">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 4h16v2H4zM4 8h10v2H4zM4 12h14v2H4zM4 16h7v2H4z"/></svg>
+        <p>Acceso a Netflix, Prime Video, Disney+, YouTube y más</p>
+      </div>
+      <div class="benefit">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3 10.28 3 12 5.28 12 5.28S13.72 3 16.5 3c3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+        <p>Fácil instalación y uso intuitivo</p>
+      </div>
     </section>
 
-    <section class="features">
-      <h2>Características principales</h2>
+    <section class="features" aria-label="Características técnicas">
+      <h2>Características Técnicas</h2>
       <ul>
-        <li>Streaming en 4K Ultra HD, HDR10+ y Dolby Vision</li>
-        <li>Control remoto por voz con Alexa incluido</li>
-        <li>Acceso a Prime Video, Netflix, YouTube, Disney+ y más</li>
-        <li>Instalación rápida y sencilla vía HDMI</li>
-        <li>Navegación fluida y rendimiento potente</li>
+        <li>Resolución 4K Ultra HD con soporte HDR10+ y Dolby Vision</li>
+        <li>Procesador Quad-Core para una experiencia fluida</li>
+        <li>Compatibilidad con Wi-Fi dual band 2.4/5 GHz</li>
+        <li>Control remoto con Alexa Voice Remote incluido</li>
+        <li>Acceso a miles de aplicaciones y servicios de streaming</li>
       </ul>
     </section>
+
+    <section class="testimonials" aria-label="Testimonios de usuarios">
+      <h2>Lo que dicen nuestros usuarios</h2>
+      <blockquote class="testimonial">
+        “El Fire TV Stick 4K transformó mi forma de ver televisión. La calidad de imagen es increíble y el control por voz hace todo más fácil.” 
+        <cite>- Marta G.</cite>
+      </blockquote>
+      <blockquote class="testimonial">
+        “Instalación sencilla, interfaz rápida y acceso a todas mis apps favoritas. ¡100% recomendable!” 
+        <cite>- Carlos M.</cite>
+      </blockquote>
+    </section>
+
+    <div class="cta">
+      <a href="https://amzn.to/47Cw1aW" target="_blank" rel="noopener noreferrer">Comprar ahora en Amazon</a>
+    </div>
   </div>
 
-  <footer>© 2025 Tu tienda online. Todos los derechos reservados.</footer>
+  <footer>
+    © 2025 Tu tienda online. Todos los derechos reservados.
+  </footer>
 </body>
 </html>
